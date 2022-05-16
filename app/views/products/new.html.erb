@@ -1,0 +1,28 @@
+<%= form_for @product do |f|  %>
+<%= f.label :name %>
+<%= f.text_field :name %>
+<%= f.label :category %>
+<%= f.text_field :category %>
+<%= f.label :rating %>
+<%= f.number_field :rating %>
+<%= f.label :price %>
+<%= f.number_field :price %>
+<%= f.submit %>
+<% end %>
+
+<!--
+<form action= "/restaurants" method="post">
+<%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+<label for="name"> Name </label>
+<input type="string" name="product[name]">
+<label for="rating"> Rating </label>
+<input type="integer" name="product[rating]">
+<label for="price"> Price </label>
+<input type="integer" name="product[price]">
+<label for="commments"> Comments </label>
+<input type="string" name="product[comments]">
+<label for="category"> Category </label>
+<input type="string" name="product[category]">
+<input type="submit">
+</form>
+-->
