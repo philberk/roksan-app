@@ -8,10 +8,10 @@
 
 100.times do
   Product.create(
-    name: Faker::Superhero,
+    name: Faker::Superhero.name,
     rating: rand(2..5),
-    comments: Faker::Quotes::Shakespeare,
-    category: @category_arr,
+    comments: Faker::TvShows::BreakingBad.episode,
+    category: Faker::Music::Hiphop.groups,
     price: rand(3..200)
   )
 end
