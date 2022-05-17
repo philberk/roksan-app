@@ -1,11 +1,1 @@
-<%= form_for @product do |f|  %>
-<%= f.label :name %>
-<%= f.text_field :name %>
-<%= f.label :category %>
-<%= f.text_field :category %>
-<%= f.label :rating %>
-<%= f.number_field :rating %>
-<%= f.label :price %>
-<%= f.number_field :price %>
-<%= f.submit %>
-<% end %>
+<%= render "form", product: @product %>

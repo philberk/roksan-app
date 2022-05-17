@@ -3,5 +3,9 @@ Rails.application.routes.draw do
   root to: 'products#index'
   get '/about', to: 'pages#about'
   get '/contact', to: 'pages#contact'
-  resources :products
+  resources :products do
+    collection do
+      get :top
+    end
+  end
 end

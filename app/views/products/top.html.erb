@@ -1,0 +1,5 @@
+<h1>Top Selling Products</h1>
+
+<% @products.each do |product| %>
+  <p> <strong> <%= product.name %> </strong> -  <%= product.rating %>⭐️  </p>
+  <%end %>

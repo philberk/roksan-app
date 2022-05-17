@@ -6,6 +6,11 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+puts 'cleaning up database'
+Product.destroy_all
+puts 'database is clean'
+
+puts 'Creating product list.'
 100.times do
   Product.create(
     name: Faker::Superhero.name,
@@ -14,4 +19,5 @@
     category: Faker::Music::Hiphop.groups,
     price: rand(3..200)
   )
+  puts "Product list created."
 end

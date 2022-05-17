@@ -1,8 +1,9 @@
 <h1> Welcome to our site: Tribe alive </h1>
 <h2> List of our products: </h2>
+<%= link_to 'Create a new Product', new_product_path  %>
 
 <%= @products.each do |product| %>
-  <h1><%= product.name %> - <%= product.rating %> ⭐️ </h1>
+  <h1><%= link_to product.name, product_path(product) %> - <%= product.rating %> ⭐️ </h1>
   <h2> $<%= product.price %></h2>
   <h3><%= product.category %></h3>
   <p><% product.comments %></p>
