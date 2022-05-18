@@ -6,9 +6,16 @@ gem 'faker'
 gem 'simple_form', github: 'heartcombo/simple_form'
 gem 'devise'
 gem 'pundit'
-gem 'bulma-rails'
-gem 'carrierwave'
-gem 'mini_magick'
+gem 'bulma-rails' #css framework
+gem 'carrierwave' # image uploading service.
+gem 'mini_magick' #carrierwave requires mini_magick
+
+
+gem 'better_errors' #front-end gives better error messages.
+gem 'guard' #task-runner for ruby
+gem 'guard-livereload'
+
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.5'
 # Use sqlite3 as the database for Active Record
