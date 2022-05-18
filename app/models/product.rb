@@ -1,4 +1,7 @@
 class Product < ApplicationRecord
+  has_many :baskets
+
+  
   validates :name, presence: true
   validates :price, presence: true
   validates :category, presence: true
